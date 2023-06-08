@@ -1,6 +1,6 @@
 {
   "name": "idebut-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library to store AWS Cognito authentication keys in Redis",
   "main": "dist/index.js",
   "scripts": {
