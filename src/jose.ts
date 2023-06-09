@@ -1,7 +1,7 @@
 import * as jose from "jose"
 
-const AWS_REGION = process.env.AWS_REGION_COGNITO || "ap-northeast-1"
-const USERPOOL = process.env.AWS_COGNITO_USERPOOL || "ap-northeast-1_kzMo3cXY7"
+const AWS_REGION = process.env.AWS_REGION_COGNITO
+const USERPOOL = process.env.AWS_COGNITO_USERPOOL
 
 const JWKS = jose.createRemoteJWKSet(
   new URL(

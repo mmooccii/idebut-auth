@@ -1,9 +1,7 @@
 import { createClient } from "redis"
 import { v4 as uuidv4 } from "uuid"
 
-const redisServerURL =
-  process.env.REDIS_SERVER_URL ||
-  "rediss://default:74c43cdf408c42e88ca3930df369f58c@apn1-electric-zebra-35752.upstash.io:35752"
+const redisServerURL = process.env.REDIS_SERVER_URL
 
 const client = createClient({
   url: redisServerURL,

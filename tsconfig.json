@@ -1,4 +1,5 @@
 {
+  "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
     /* Projects */
@@ -99,6 +100,11 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "include": [
+    "src/**/*.ts",
     "src/**/*.test.ts"
   ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
 }

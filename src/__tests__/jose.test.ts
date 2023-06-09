@@ -1,3 +1,4 @@
+import "dotenv/config"
 import { verifyToken } from "../jose"
 
 const encrypted: string =

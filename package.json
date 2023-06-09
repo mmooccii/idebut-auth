@@ -1,10 +1,10 @@
 {
   "name": "idebut-auth",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A library to store AWS Cognito authentication keys in Redis",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "test": "jest"
   },
   "repository": {
@@ -26,8 +26,11 @@
   "homepage": "https://github.com/mmooccii/idebut-auth#readme",
   "devDependencies": {
     "@jest/globals": "^29.5.0",
+    "@tsconfig/node16": "^1.0.4",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.2.5",
+    "@types/uuid": "^9.0.1",
+    "dotenv": "^16.1.4",
     "jest": "^29.5.0",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
